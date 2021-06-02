@@ -27,10 +27,10 @@ import Page2 from './Page2';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={"/amazon"}>
       <Route path="/" exact component={Page1} />
       <Route path="/page" component={Page2} />
-    </BrowserRouter>
+    </Router>
   );
 }
 
