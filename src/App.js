@@ -28,7 +28,7 @@ import Page2 from './Page2';
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Route path="/" exact component={Page1} />
+      <Route path="process.env.PUBLIC_URL" exact component={Page1} />
       <Route path="/page" component={Page2} />
     </BrowserRouter>
   );
