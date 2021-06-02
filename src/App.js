@@ -27,10 +27,10 @@ import Page2 from './Page2';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <Route path={process.env.PUBLIC_URL + '/'} exact component={Page1} />
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Route path="/" exact component={Page1} />
       <Route path="/page" component={Page2} />
-    </Router>
+    </BrowserRouter>
   );
 }
 
