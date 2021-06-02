@@ -20,17 +20,31 @@ import PrimeHead2 from './components/PrimeHead2';
 import PrimeHead3 from './components/PrimeHeader3';
 import PrimeFooter from './components/PrimeFooter';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Page1 from './Page1';
-import Page2 from './Page2';
 
-function App() {
+function Page2() {
   return (
-    <Router>
-      <Route path="/" exact component={Page1} />
-      <Route path="/page" component={Page2} />
-    </Router>
+    <React.Fragment>
+    {/* <Navbar />
+    <Header />
+    <HeaderSlider />
+    <Slider />
+    <Slider2 />
+    <Slider3 />
+    <Slider4 />
+    <Slider5 />
+    <Slider6 />
+    <Slider7 />
+    <Slider8 />
+    <Slider9 />
+    <Lang />
+    <Footer /> */}
+    <PrimeHeader />
+    <PrimeHead />
+    <PrimeHead2 />
+    <PrimeHead3 />
+    <PrimeFooter />
+    </React.Fragment>
   );
 }
 
-export default App;
+export default Page2;
