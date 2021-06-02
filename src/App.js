@@ -21,15 +21,16 @@ import PrimeHead3 from './components/PrimeHeader3';
 import PrimeFooter from './components/PrimeFooter';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import BrowserRouter from 'react-router-dom/BrowserRouter';
 import Page1 from './Page1';
 import Page2 from './Page2';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route path="/" exact component={Page1} />
       <Route path="/page" component={Page2} />
-    </Router>
+    </BrowserRouter>
   );
 }
 
