@@ -27,7 +27,7 @@ import Page2 from './Page2';
 
 function App() {
   return (
-    <Router basename={"/amazon"}>
+    <Router basename={"https://karankataria77.github.io/amazon"}>
       <Route path="/" exact component={Page1} />
       <Route path="/page" component={Page2} />
     </Router>
